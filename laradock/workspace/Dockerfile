@@ -240,7 +240,7 @@ USER root
 ARG INSTALL_BZ2=false
 ARG INSTALL_GMP=false
 ARG INSTALL_GNUPG=false
-ARG INSTALL_SSH2=false
+ARG INSTALL_SSH2=true
 ARG INSTALL_SOAP=false
 ARG INSTALL_XSL=false
 ARG PHP_VERSION=${LARADOCK_PHP_VERSION}
@@ -426,7 +426,7 @@ RUN if [ ${INSTALL_XDEBUG} = false -a ${INSTALL_BLACKFIRE} = true ]; then \
 # ssh:
 ###########################################################################
 
-ARG INSTALL_WORKSPACE_SSH=false
+ARG INSTALL_WORKSPACE_SSH=true
 
 COPY insecure_id_rsa /tmp/id_rsa
 COPY insecure_id_rsa.pub /tmp/id_rsa.pub

@@ -15,8 +15,11 @@ then
     git clone https://github.com/HPACE-IT-development/asknt-vue-front-hpace.git
 fi
 
+chmod +x "$DIR_BACKEND"'/build.sh'
+chmod +x "$DIR_FRONTEND"'/build.sh'
+
 docker-compose down
-docker-compose up -d nginx postgres postgres-postgis redis
+docker-compose up -d nginx postgres redis
 docker-compose exec workspace bash -c 'cd /var/www/'"$DIR_BACKEND"' && ./build.sh'
 echo 'initializing successful'
 exit 0

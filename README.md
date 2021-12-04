@@ -4,7 +4,6 @@
 ```
 git clone https://username:personal_access_token@github.com/HPACE-IT-development/asknt-vue-front-hpace.git
 cd asknt-docker-cicd-hpace
-cp .env.example .env
 chmod +x init.sh
 ./init.sh
 ```

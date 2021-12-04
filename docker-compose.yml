@@ -20,8 +20,6 @@ volumes:
     driver: ${VOLUMES_DRIVER}
   phpmyadmin:
     driver: ${VOLUMES_DRIVER}
-  elasticsearch:
-    driver: ${VOLUMES_DRIVER}
   docker-in-docker:
     driver: ${VOLUMES_DRIVER}
 

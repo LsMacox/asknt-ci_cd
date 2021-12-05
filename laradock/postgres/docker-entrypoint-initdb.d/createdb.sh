@@ -26,8 +26,8 @@
 #     GRANT ALL PRIVILEGES ON DATABASE db2 TO db2;
 # EOSQL
 # 
-psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" <<-EOSQL
-     CREATE USER asknt WITH PASSWORD 'asknt';
-     CREATE DATABASE asknt;
-     GRANT ALL PRIVILEGES ON DATABASE asknt TO asknt;
-EOSQL
+#psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" <<-EOSQL
+#     CREATE USER asknt WITH PASSWORD 'asknt';
+#     CREATE DATABASE asknt;
+#     GRANT ALL PRIVILEGES ON DATABASE asknt TO asknt;
+#EOSQL

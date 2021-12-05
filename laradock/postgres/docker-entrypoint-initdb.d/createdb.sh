@@ -27,7 +27,7 @@
 # EOSQL
 # 
 psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" <<-EOSQL
-     CREATE USER lsmacox WITH PASSWORD 'admin';
+     CREATE USER asknt WITH PASSWORD 'asknt';
      CREATE DATABASE asknt;
-     GRANT ALL PRIVILEGES ON DATABASE asknt TO lsmacox;
+     GRANT ALL PRIVILEGES ON DATABASE asknt TO asknt;
 EOSQL

@@ -1,2 +1,3 @@
 *.conf
+!asknt.conf
 !default.conf

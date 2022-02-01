@@ -14,7 +14,7 @@ DIR_FRONTEND='asknt-vue-front-hpace'
 if [ -d "$DIR_BACKEND" ] && [ -d "$DIR_FRONTEND" ];
 then
   docker-compose down
-  docker-compose up -d nginx postgres redis
+  docker-compose up -d nginx postgres redis php-worker
   docker-compose exec workspace bash -c 'cd /var/www/'"$DIR_BACKEND"' && chmod +x build.sh && ./build.sh'
   docker-compose exec workspace bash -c 'cd /var/www/'"$DIR_FRONTEND"' && chmod +x build.sh && ./build.sh'
   echo 'Initializing successful'

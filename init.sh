@@ -18,7 +18,7 @@ then
   docker-compose exec workspace bash -c 'cd /var/www/'"$DIR_BACKEND"' && chmod +x build.sh && ./build.sh'
   docker-compose exec workspace bash -c 'cd /var/www/'"$DIR_FRONTEND"' && chmod +x build.sh && ./build.sh'
   echo 'Initializing successful'
-  exit 0
+  exit
 fi
 
 if [ ! -d "$DIR_BACKEND" ];
